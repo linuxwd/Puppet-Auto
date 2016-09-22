@@ -1,5 +1,10 @@
-import 'default_node.pp'
+
 node puppet02.tfpay.com {
-    include squid,vim,ntpd
+    include default-node
     notify{"finish":}
 }
+node default {
+    include defaultnode
+    notify{"Finish install Default Software":}
+}
+
