@@ -1,4 +1,4 @@
-class vim{
-    include vim::install
-#    include httpd::service
+class php{
+    include php::install
+#    include php-fpm::service
 }

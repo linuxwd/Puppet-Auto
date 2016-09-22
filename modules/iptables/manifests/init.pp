@@ -1,4 +1,4 @@
-class vim{
-    include vim::install
-#    include httpd::service
+class iptables{
+    include iptables::install
+#    include iptables::service
 }

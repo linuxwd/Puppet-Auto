@@ -1,5 +1,6 @@
-class vim::install {
-    package {['vim-common','vim-X11','vim-filesystem','vim-enhanced','vim-minimal']:
+class iptables::install {
+    package {['iptables','iptables-devel','iptables-utils','iptables-services']:
     ensure => installed,
+    notify{"The iptables software has already installed":}
     }
 }

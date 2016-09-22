@@ -1,9 +1,9 @@
-class httpd::service{
-    service{'httpd.service':
+class iptables::service{
+    service{'iptables.service':
         ensure => running,
         hasstatus => true,
         hasrestart => true,
         enable => true,
-        require => Class["httpd::install"],
+        require => Class["iptables::install"],
     }
 }
