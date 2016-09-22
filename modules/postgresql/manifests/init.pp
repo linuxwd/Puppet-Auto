@@ -1,4 +1,4 @@
-class vim{
-    include vim::install
-#    include httpd::service
+class postgresql{
+    include postgresql::install
+#    include postgresql::service
 }

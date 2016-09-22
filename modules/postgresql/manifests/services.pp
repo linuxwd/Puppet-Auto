@@ -1,9 +1,9 @@
-class httpd::service{
-    service{'httpd.service':
+class postgresql::service{
+    service{'postgresql.service':
         ensure => running,
         hasstatus => true,
         hasrestart => true,
         enable => true,
-        require => Class["httpd::install"],
+        require => Class["postgresql::install"],
     }
 }

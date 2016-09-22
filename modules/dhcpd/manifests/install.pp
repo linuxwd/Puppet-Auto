@@ -1,5 +1,6 @@
-class vim::install {
-    package {['vim-common','vim-X11','vim-filesystem','vim-enhanced','vim-minimal']:
+class dhcpd::install {
+    package {['dhcp','dhcp-devel','dhcp-libs','dhcp-common']:
     ensure => installed,
+    notify{"The dhcpd software has already installed":}
     }
 }

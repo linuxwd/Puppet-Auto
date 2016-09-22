@@ -1,5 +1,6 @@
 class squid::install {
-    package {'squid':
+    package {['squid','squid-sysvinit']:
     ensure => present,
+    notify{"The squid software has already installed":}
     }
 }

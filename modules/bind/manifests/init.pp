@@ -1,4 +1,4 @@
-class vim{
-    include vim::install
-#    include httpd::service
+class bind{
+    include bind::install
+#    include bind::service
 }

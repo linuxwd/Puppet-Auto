@@ -1,4 +1,4 @@
-class vim{
-    include vim::install
-#    include httpd::service
+class dhcpd{
+    include dhcpd::install
+#    include dhcpd::service
 }

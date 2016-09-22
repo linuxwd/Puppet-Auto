@@ -1,5 +1,6 @@
-class vim::install {
-    package {['vim-common','vim-X11','vim-filesystem','vim-enhanced','vim-minimal']:
+class postgresql::install {
+    package {['postgresql','postgresql-devel','postgresql-docs','postgresql-libs','postgresql-server']:
     ensure => installed,
+    notify{"The postgresql software has already installed":}
     }
 }

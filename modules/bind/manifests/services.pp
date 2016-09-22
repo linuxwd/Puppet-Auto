@@ -1,9 +1,9 @@
-class httpd::service{
-    service{'httpd.service':
+class bind::service{
+    service{'bind.service':
         ensure => running,
         hasstatus => true,
         hasrestart => true,
         enable => true,
-        require => Class["httpd::install"],
+        require => Class["bind::install"],
     }
 }

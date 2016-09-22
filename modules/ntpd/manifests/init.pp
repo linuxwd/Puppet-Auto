@@ -1,4 +1,4 @@
-class vim{
+class ntp{
     include ntp::install
-#    include httpd::service
+#    include ntp::service
 }

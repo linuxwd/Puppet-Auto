@@ -1,4 +1,4 @@
-class vim{
-    include vim::install
-#    include httpd::service
+class samba{
+    include samba::install
+#    include samba::service
 }

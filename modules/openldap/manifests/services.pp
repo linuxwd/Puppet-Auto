@@ -1,9 +1,9 @@
-class samba::service{
-    service{'samba.service':
+class openldap::service{
+    service{'openldap.service':
         ensure => running,
         hasstatus => true,
         hasrestart => true,
         enable => true,
-        require => Class["samba::install"],
+        require => Class["openldap::install"],
     }
 }
