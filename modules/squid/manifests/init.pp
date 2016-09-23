@@ -1,4 +1,4 @@
 class squid{
-#    include squid::install
-    include squid::service
+    include squid::install
+#    include squid::service
 }

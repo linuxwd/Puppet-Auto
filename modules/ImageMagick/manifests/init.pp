@@ -1,3 +1,3 @@
-class ImageMagick{
-    include ImageMagick::install
+class imagemagick {
+    include imagemagick::install
 }

@@ -1,6 +1,8 @@
 class git::install {
-    package {['git-all','git-daemon','git']:
+    package {['git-all',
+              'git-daemon',
+              'git']:
     ensure => present,
-    notify{"The git software has already installed":}
     }
+    notify{"The git software has already installed":}
 }

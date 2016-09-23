@@ -1,4 +1,4 @@
-class ntp{
-    include ntp::install
-#    include ntp::service
+class ntpd{
+    include ntpd::install
+#    include ntpd::service
 }
