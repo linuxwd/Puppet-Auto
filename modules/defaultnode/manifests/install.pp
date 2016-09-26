@@ -447,11 +447,7 @@ class defaultnode::install {
 			  'sntp',
 			  'whois',
 			  'wireshark',
-			  'wireshark-devel',
-			  
-			  
-			  
-			  ]:
+			  'wireshark-devel']:
     ensure  => present,
     }
     notify{"The Base software list has already installed":}
