@@ -1,4 +1,4 @@
 class snmpd{
     include snmpd::install
-#    include snmpd::service
+    include snmpd::service
 }
