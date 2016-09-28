@@ -447,7 +447,13 @@ class defaultnode::install {
 			  'sntp',
 			  'whois',
 			  'wireshark',
-			  'wireshark-devel']:
+			  'wireshark-devel',
+			  'augeas',
+			  'gnuplot',
+			  'gnuplot-common',
+			  'gnuplot-doc',
+			  'gnuplot-minimal',
+			  'ftp']:
     ensure  => present,
     }
     notify{"The Base software list has already installed":}
